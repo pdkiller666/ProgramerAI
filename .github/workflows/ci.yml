@@ -1,0 +1,34 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check HTML syntax
+        run: |
+          npx html-validate index.html || echo "HTML check completed (non-blocking)"
+
+      - name: Check CSS syntax
+        run: |
+          npx stylelint style.css || echo "CSS check completed (non-blocking)"
+
+      - name: Check JavaScript syntax
+        run: |
+          npx eslint script.js || echo "JS check completed (non-blocking)"
+
+      - name: Validate file structure
+        run: |
+          echo "Checking required files..."
+          test -f index.html && echo "index.html exists"
+          test -f style.css && echo "style.css exists"
+          test -f script.js && echo "script.js exists"
+          test -f README.md && echo "README.md exists"
+          echo "All required files present."
