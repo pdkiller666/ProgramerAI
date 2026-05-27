@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Тарасов Илья — Vibe Coding Developer. Современный лендинг с анимациями, адаптивным дизайном и интерактивными элементами.">
+  <title>Тарасов Илья — Vibe Coding Developer</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <a href="#" class="header__logo">Тарасов Илья</a>
+      <button class="header__burger" aria-label="Открыть меню" aria-expanded="false">
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+      </button>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li><a href="#hero" class="header__nav-link">Главная</a></li>
+          <li><a href="#about" class="header__nav-link">Обо мне</a></li>
+          <li><a href="#skills" class="header__nav-link">Навыки</a></li>
+          <li><a href="#projects" class="header__nav-link">Проекты</a></li>
+          <li><a href="#contact" class="header__nav-link">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container hero__container">
+        <div class="hero__content">
+          <h1 class="hero__title">Тарасов Илья</h1>
+          <p class="hero__subtitle">Vibe Coding Developer</p>
+          <p class="hero__description">Создаю современные веб-приложения с душой и вниманием к деталям. Превращаю идеи в цифровые продукты.</p>
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary">Мои проекты</a>
+            <a href="#contact" class="btn btn--outline">Связаться</a>
+          </div>
+        </div>
+        <div class="hero__visual">
+          <div class="hero__code-block">
+            <pre><code>&lt;div class="vibe"&gt;
+  &lt;h1&gt;Hello, World!&lt;/h1&gt;
+  &lt;p&gt;Let's build something amazing.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">Обо мне</h2>
+        <div class="about__content">
+          <div class="about__text">
+            <p>Привет! Я Илья — разработчик, который верит, что код должен быть не только функциональным, но и красивым. Мой подход — "Vibe Coding": я создаю продукты, которые приносят радость и вдохновение.</p>
+            <p>Специализируюсь на frontend-разработке, но не боюсь заглядывать в backend. Постоянно учусь и экспериментирую с новыми технологиями.</p>
+          </div>
+          <div class="about__stats">
+            <div class="stat">
+              <span class="stat__number">3+</span>
+              <span class="stat__label">Года опыта</span>
+            </div>
+            <div class="stat">
+              <span class="stat__number">20+</span>
+              <span class="stat__label">Проектов</span>
+            </div>
+            <div class="stat">
+              <span class="stat__number">100%</span>
+              <span class="stat__label">Энтузиазма</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2 class="section-title">Навыки</h2>
+        <div class="skills__grid">
+          <div class="skill-card">
+            <div class="skill-card__icon">⚛️</div>
+            <h3 class="skill-card__title">React / Next.js</h3>
+            <p class="skill-card__description">Создание SPA и SSR приложений с современным стеком.</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-card__icon">🎨</div>
+            <h3 class="skill-card__title">CSS / Tailwind</h3>
+            <p class="skill-card__description">Адаптивная верстка, анимации, utility-first подход.</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-card__icon">🛠️</div>
+            <h3 class="skill-card__title">TypeScript</h3>
+            <p class="skill-card__description">Типизация, улучшение качества и поддерживаемости кода.</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-card__icon">📱</div>
+            <h3 class="skill-card__title">Mobile First</h3>
+            <p class="skill-card__description">Проектирование с фокусом на мобильные устройства.</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-card__icon">🚀</div>
+            <h3 class="skill-card__title">Node.js</h3>
+            <p class="skill-card__description">Backend разработка, API, базы данных.</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-card__icon">🎯</div>
+            <h3 class="skill-card__title">UI/UX</h3>
+            <p class="skill-card__description">Понимание принципов юзабилити и дизайна интерфейсов.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title">Проекты</h2>
+        <div class="projects__grid">
+          <article class="project-card">
+            <div class="project-card__image">
+              <div class="project-card__placeholder">📊</div>
+            </div>
+            <div class="project-card__content">
+              <h3 class="project-card__title">Vibe Dashboard</h3>
+              <p class="project-card__description">Интерактивная панель управления с графиками и аналитикой.</p>
+              <div class="project-card__tags">
+                <span class="tag">React</span>
+                <span class="tag">D3.js</span>
+                <span class="tag">Tailwind</span>
+              </div>
+              <a href="#" class="project-card__link">Подробнее →</a>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-card__image">
+              <div class="project-card__placeholder">🎵</div>
+            </div>
+            <div class="project-card__content">
+              <h3 class="project-card__title">SoundFlow</h3>
+              <p class="project-card__description">Веб-плеер с визуализацией аудио и плейлистами.</p>
+              <div class="project-card__tags">
+                <span class="tag">Next.js</span>
+                <span class="tag">Web Audio API</span>
+                <span class="tag">CSS</span>
+              </div>
+              <a href="#" class="project-card__link">Подробнее →</a>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-card__image">
+              <div class="project-card__placeholder">🤖</div>
+            </div>
+            <div class="project-card__content">
+              <h3 class="project-card__title">CodeBuddy</h3>
+              <p class="project-card__description">AI-ассистент для поиска и рефакторинга кода.</p>
+              <div class="project-card__tags">
+                <span class="tag">TypeScript</span>
+                <span class="tag">OpenAI</span>
+                <span class="tag">Node.js</span>
+              </div>
+              <a href="#" class="project-card__link">Подробнее →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Контакты</h2>
+        <div class="contact__content">
+          <p class="contact__description">Готов к сотрудничеству и новым проектам. Напишите мне!</p>
+          <form class="contact__form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name" class="form-label">Имя</label>
+              <input type="text" id="name" name="name" class="form-input" placeholder="Ваше имя" required>
+              <span class="form-error" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="your@email.com" required>
+              <span class="form-error" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">Сообщение</label>
+              <textarea id="message" name="message" class="form-input form-textarea" placeholder="Ваше сообщение..." rows="5" required></textarea>
+              <span class="form-error" aria-live="polite"></span>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">Отправить</button>
+          </form>
+          <div class="contact__social">
+            <a href="#" class="social-link" aria-label="GitHub">GitHub</a>
+            <a href="#" class="social-link" aria-label="LinkedIn">LinkedIn</a>
+            <a href="#" class="social-link" aria-label="Telegram">Telegram</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <p class="footer__copy">© 2024 Тарасов Илья. Vibe Coding.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
