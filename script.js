@@ -92,6 +92,24 @@
   form.addEventListener('submit', function(e) {
     e.preventDefault();
 
+    // Custom validation before standard validation
+    const nameInput = document.getElementById('name');
+    const emailInput = document.getElementById('email');
+    const messageInput = document.getElementById('message');
+
+    if (nameInput && (!nameInput.value.trim())) {
+      alert('Пожалуйста, введите имя.');
+      return false;
+    }
+    if (emailInput && (!emailInput.value.trim() || !emailInput.value.includes('@'))) {
+      alert('Пожалуйста, введите корректный email.');
+      return false;
+    }
+    if (messageInput && (!messageInput.value.trim())) {
+      alert('Пожалуйста, введите сообщение.');
+      return false;
+    }
+
     let isValid = true;
     fields.forEach(function(field) {
       const input = document.getElementById(field.id);
